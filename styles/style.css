@@ -75,3 +75,20 @@ nav {
         flex-direction: column;
     }
 }
+@media screen and (min-width: 577px) and (max-width: 996px) {
+    nav{
+        height: 300px;
+        padding-top: 50px;
+    }
+    nav,
+    .nav-right,
+    .nav-ul{
+        gap: 30px;
+    }
+    nav,
+    .nav-right,
+    .nav-ul
+    {
+        flex-direction: column;
+    }
+}
