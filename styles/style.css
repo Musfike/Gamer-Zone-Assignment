@@ -21,7 +21,6 @@ nav ,
 .asd{
     color: #3C354F;
 }
-
   /* nav styles */
 nav {
     align-items: center;
@@ -55,8 +54,17 @@ nav {
     align-items: center;
     text-align: center;
 }
+                       /* Goat section start */
+
+  .goat{
+    display: flex;
+  }
+  .goat div img{
+    height: 40rem;
+    width: 32rem;
+  }
    
-      /* responsive */
+                       /* responsive */
 @media screen and (max-width: 576px){
     nav{
         background-color: none;
