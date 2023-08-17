@@ -35,6 +35,7 @@ nav ,
     background-color: rgb(224, 66, 153);
 }
 
+
 .black{
     color: #0B0223;
 }
@@ -126,6 +127,37 @@ nav {
    .gr-btn{
        background-color: #4EC5F7;
    }
+
+                    /* Online games section */
+
+    .online-games{
+         margin: 100px auto;
+         text-align: center;
+    }
+    .online-games >h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .online-games >p{
+        padding-top: 15px;
+        padding-bottom: 30px;
+        font-size: 1.25rem;
+    }
+    .online-games-img-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        text-align: start;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .online-games-img-container div img{
+        height: 300px;
+        width: 240px;
+    }
+
+
+
                        /* responsive */
 @media screen and (max-width: 576px){
           /* nav responsive */
@@ -160,9 +192,26 @@ nav {
     }
     .goat-left{
         padding: 0px;
-        /* margin: 0px; */
         width: auto;
     }
+                            /* Online games section responsive*/
+
+    .online-games{
+        margin: 100px auto;
+    }
+   .online-games-img-container{
+    grid-template-columns: repeat(1, 1fr);
+    /* padding: 10px 85px; */
+    
+   }
+  
+   .online-games-img-container >div{
+    /* padding: 0px 0px 0px 0px; */
+    margin: auto;
+    /* padding-right: 10px; */
+    /* padding-left: 0px; */
+   }
+   
     
 }
 @media screen and (min-width: 577px) and (max-width: 996px) {
@@ -189,4 +238,14 @@ nav {
     .banner div img{
         width: 100%;
     }
+
+                              /* online games section responsive */
+
+.online-games-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+
 }
