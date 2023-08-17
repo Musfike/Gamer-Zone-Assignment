@@ -181,7 +181,7 @@ nav {
         flex-direction: column;
     }
 
-            /* banner responsive */
+                                /* banner responsive */
     .banner{
         flex-direction: column-reverse;
         width: 100%;
@@ -201,15 +201,12 @@ nav {
     }
    .online-games-img-container{
     grid-template-columns: repeat(1, 1fr);
-    /* padding: 10px 85px; */
+    padding: 10px 85px;
     
    }
   
    .online-games-img-container >div{
-    /* padding: 0px 0px 0px 0px; */
     margin: auto;
-    /* padding-right: 10px; */
-    /* padding-left: 0px; */
    }
    
     
