@@ -156,11 +156,54 @@ nav {
         width: 240px;
     }
 
+                        /* play instant section start */
+
+    .play-instant {
+        display: flex;
+        gap: 80px;
+        margin-right: 0px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }   
+    
+    .play-instant-description{
+        padding-left: 120px;
+        margin-top: 170px;
+    }                 
+    .play-instant div h1{
+        text-align: right;
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 0px;
+    }
+    .play-instant-img{
+        height: 550px;
+        width: 530px;
+        margin: 0px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .play-instant div p{
+        font-weight: 400;
+        text-align: right;
+    }
+    .pseudo{
+        height: 265px;
+        width: 218px;
+        position: relative;
+        bottom: 200px;
+    }
 
 
-                       /* responsive */
+
+
+
+
+
+                        /* responsive */
+
 @media screen and (max-width: 576px){
-          /* nav responsive */
+                         /* nav responsive */
     nav{
         background-color: none;
         margin: 100px auto;
@@ -208,6 +251,36 @@ nav {
    .online-games-img-container >div{
     margin: auto;
    }
+    
+                            /* play instant section responsive */
+    .play-instant{
+        flex-direction: column;
+    }
+
+    .play-instant-description{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px;
+    }
+    
+    
+    .play-instant-img-container{
+        padding-left: 0px;
+    }
+    .play-instant-img{
+        padding-left: 50px;
+        padding-right: 0px;
+        width: 300px;
+        height: 450px;
+    }
+    .play-instant div h1,
+    .play-instant div p{
+        text-align: center;
+    }
+    .pseudo{
+        width: 200px;
+        height: 250px;
+    }
    
     
 }
@@ -228,6 +301,10 @@ nav {
         gap: 50px;
     }
                                 /* banner responsive */
+    .goat-left{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
     .banner{
         flex-direction: column;
         gap: 50px;
@@ -238,11 +315,28 @@ nav {
 
                               /* online games section responsive */
 
-.online-games-img-container{
+    .online-games{
+        margin-bottom: 0px;
+    }
+    .online-games-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
+        
+                            /* play instant section responsive */
 
-
+    .play-instant{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+   
+    .play-instant-description,
+    .play-instant-img-container{
+        padding: 0px 40px;
+    }
+    .play-instant div h1,
+    .play-instant div p{
+        text-align: center;
+    }
 }
