@@ -1,4 +1,4 @@
-/* work sans font */
+                      /* work sans font */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans:wght@700;800&family=Playfair+Display:ital@1&family=Roboto+Slab:wght@300;500&family=Work+Sans:wght@400;500;600;800&display=swap");
 
 * {
@@ -15,14 +15,8 @@
   visibility: hidden;
 }
 
-/* Shared styles */
 
-nav,
-.nav-right,
-.nav-ul,
-.nav-left {
-  display: flex;
-}
+
 
                           /* shared colors */
 
@@ -53,7 +47,15 @@ nav,
   color: rgba(255, 255, 255, 0.60);
 }
 
-/* nav styles */
+                            /* nav styles */
+
+
+nav,
+.nav-right,
+.nav-ul,
+.nav-left {
+  display: flex;
+}
 
 nav {
   align-items: center;
@@ -86,7 +88,7 @@ nav {
   text-align: center;
 }
 
-/* banner section start */
+                        /* banner section start */
 
 .banner {
   display: flex;
@@ -130,7 +132,7 @@ nav {
   background-color: #4ec5f7;
 }
 
-/* Online games section */
+                        /* Online games section */
 
 .online-games {
   margin: 100px auto;
@@ -157,6 +159,48 @@ nav {
   height: 300px;
   width: 240px;
 }
+
+        
+                            /* play icon setup */
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.watch-now-button {
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  color: black;
+  opacity: 0;
+
+}
+.play-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  background-image: url("../styles/images/play-icon.png");
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.img-container:hover .play-icon{
+  opacity: 1;
+}
+.img-container:hover .watch-now-button{
+  opacity: 1;
+}
+.img-container:hover img{
+  filter: brightness(50%);
+  border: 5px solid rgb(207, 61, 151);
+  border-radius: 22px;
+}
+
+
 
                       /* play instant section start */
 
